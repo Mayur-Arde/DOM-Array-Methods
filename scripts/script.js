@@ -50,7 +50,7 @@ function updateUI (providedData = data){
 
 // format the normal number into insain rupees format 
 function formatMoney (number){
-  return '₹' + number.toFixed(2).replace(/^(\d{1,2})(,\d{2})*(,\d{1,3}){1}(\.\d{1,})?$/g);
+  return '₹' +  number.toFixed(2).replace(/\B(?=(?:(\d\d)+(\d)(?!\d))+(?!\d))/g, ',');
 }
 
 // double the money
