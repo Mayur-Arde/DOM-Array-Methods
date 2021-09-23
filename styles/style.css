@@ -77,3 +77,32 @@ h3 {
   margin-bottom: 12px;
   padding: 0px 10px;
 }
+
+/* small device */
+@media all and (max-width:430px){
+  aside {
+    padding: 10px;
+    width: 110px;
+  }
+
+  .container{
+    margin-top: 2rem;
+  }
+
+  .btn{
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+
+
+  main{
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h3{
+    padding: 6px;
+    font-size: 12px;
+    align-items:center;
+  }
+}
